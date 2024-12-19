@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>MyCalculator</title>
+</head>
+<body>
+  <div class="calculator">
+    <h1>My Calculator</h1>
+    
+      <div class="input-container">
+        <input type="number" id="number1" placeholder="Entrez le premier nombre">
+        <input type="number"  id="number2" placeholder="Entrez le deuxième nombre">
+      </div>
+      <div class="operation-container">
+        <label for="operation">Choisissez une opération :</label>
+        <select id="operation">
+            <option value="add">Addition</option>
+            <option value="subtract">Soustraction</option>
+            <option value="multiply">Multiplication</option>
+            <option value="divide">Division</option>
+        </select>
+  </div>
+
+  <h2>Résultat est : <span id="result">...</span></h2>
+  <div class="button-container">
+    <button onclick="calculateResult()">Calculer</button>
+  </div>
+  </div>
+  <script src="script.js"></script>
+  
+</body>
+</html>
